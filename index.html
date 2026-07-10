@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apartamento en renta en El Peñón, Cali · 135 m² · $2.700.000</title>
+<meta name="description" content="Apartamento remodelado de 135 m² en El Peñón, Cali: 2 habitaciones con balcón y vista, 2 baños, terraza, garaje, piso 5. $2.700.000/mes, renta directa sin intermediarios.">
+<meta name="theme-color" content="#FAF7F0">
+
+<!-- ========== TODO AL PUBLICAR (checklist) ==========
+     1. Reemplazar [DOMINIO-AL-PUBLICAR] por el dominio real en og:url y og:image (deben ser URLs absolutas https).
+     2. Validar el preview con https://developers.facebook.com/tools/debug/ (sharing debugger de Meta).
+     3. Enviarse el link a sí mismo por WhatsApp y confirmar que salen foto, título y descripción.
+     Los previews de WhatsApp solo funcionan con la página hospedada, no abriendo el archivo local. -->
+<meta property="og:title" content="Apartamento en renta en El Peñón, Cali · 135 m² · $2.700.000">
+<meta property="og:description" content="Remodelado, 2 habitaciones con balcón y vista, terraza, garaje. Renta directa, sin intermediarios.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_CO">
+<meta property="og:url" content="https://[DOMINIO-AL-PUBLICAR]/">
+<meta property="og:image" content="https://[DOMINIO-AL-PUBLICAR]/assets/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Sala del apartamento con ventanales esquineros y salida a la terraza">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231E3A2A'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='36' fill='%23FAF7F0' text-anchor='middle'%3EP%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+/* ============ Tokens ============ */
+:root{
+  --cal:#FAF7F0;          /* paredes encaladas */
+  --papel:#FFFEFA;
+  --arena:#F1EBDE;
+  --tinta:#232920;        /* el gris-verde del porcelanato */
+  --tinta-suave:#5D6357;
+  --verde:#1E3A2A;        /* el verde del oeste */
+  --verde-osc:#152B1F;
+  --terracota:#9D5330;    /* el remate de ladrillo del balcón */
+  --linea:#E4DDCB;
+  --wa:#25D366;
+  --f-display:'Fraunces', Georgia, 'Times New Roman', serif;
+  --f-body:'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* ============ Base ============ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} }
+body{
+  font-family:var(--f-body);
+  font-size:16.5px;
+  line-height:1.65;
+  color:var(--tinta);
+  background:var(--cal);
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--verde);outline-offset:3px;border-radius:2px}
+
+.contenedor{max-width:1180px;margin-inline:auto;padding-inline:clamp(20px,4.5vw,48px)}
+.seccion{padding-block:clamp(72px,9vw,120px)}
+
+.kicker{
+  font-size:11px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--verde);margin-bottom:18px;
+}
+.titulo{
+  font-family:var(--f-display);
+  font-optical-sizing:auto;
+  font-weight:450;
+  font-size:clamp(1.9rem,4.2vw,3rem);
+  line-height:1.12;
+  letter-spacing:-.01em;
+  max-width:20ch;
+}
+.parrafo{color:var(--tinta-suave);max-width:58ch;margin-top:20px}
+
+/* ============ Botones ============ */
+.btn{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:15px 28px;border-radius:999px;border:1px solid transparent;
+  font-family:var(--f-body);font-size:14px;font-weight:600;letter-spacing:.02em;
+  text-decoration:none;cursor:pointer;
+  transition:background-color .2s ease, border-color .2s ease, transform .2s ease;
+}
+.btn svg{flex:none}
+.btn-primario{background:var(--verde);color:var(--cal)}
+.btn-primario:hover{background:var(--verde-osc);transform:translateY(-1px)}
+.btn-secundario{border-color:rgba(35,41,32,.28);color:var(--tinta)}
+.btn-secundario:hover{background:var(--papel);border-color:rgba(35,41,32,.5)}
+.btn-claro{background:var(--cal);color:var(--verde)}
+.btn-claro:hover{background:#fff;transform:translateY(-1px)}
+.btn-borde-claro{border-color:rgba(250,247,240,.4);color:var(--cal)}
+.btn-borde-claro:hover{border-color:var(--cal);background:rgba(250,247,240,.08)}
+
+/* ============ CTA intermedio ============ */
+.cta-seccion{margin-top:clamp(36px,5vw,56px);text-align:center}
+.cta-seccion p{
+  font-family:var(--f-display);font-style:italic;font-weight:400;
+  font-size:clamp(1.15rem,2.2vw,1.5rem);line-height:1.35;
+  max-width:26em;margin:0 auto 22px;
+}
+
+
+/* ============ Nav ============ */
+.nav{
+  position:sticky;top:0;z-index:50;
+  background:rgba(250,247,240,.86);
+  -webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--linea);
+}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+.marca{
+  font-family:var(--f-display);font-size:1.05rem;font-weight:550;
+  text-decoration:none;letter-spacing:.01em;
+}
+.marca em{font-style:italic;color:var(--verde)}
+.nav-links{display:flex;gap:28px;list-style:none}
+.nav-links a{
+  font-size:13px;font-weight:500;letter-spacing:.04em;text-decoration:none;
+  color:var(--tinta-suave);transition:color .2s ease;
+}
+.nav-links a:hover{color:var(--tinta)}
+.nav-wa{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--verde);color:var(--cal);text-decoration:none;
+  font-size:13px;font-weight:600;padding:9px 18px;border-radius:999px;
+  transition:background-color .2s ease;
+}
+.nav-wa:hover{background:var(--verde-osc)}
+@media (max-width:820px){ .nav-links{display:none} }
+
+/* ============ Hero ============ */
+.hero{display:grid;grid-template-columns:1.08fr .92fr;min-height:min(88vh,900px)}
+.hero-texto{
+  display:flex;flex-direction:column;justify-content:center;
+  padding:clamp(40px,5vw,64px) clamp(28px,5vw,72px) clamp(40px,5vw,64px) clamp(20px,calc((100vw - 1180px)/2 + 48px),50vw);
+}
+.hero-eyebrow{
+  font-size:11px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--terracota);margin-bottom:20px;
+}
+.hero h1{
+  font-family:var(--f-display);font-optical-sizing:auto;
+  font-weight:420;font-size:clamp(2.4rem,5vw,3.9rem);
+  line-height:1.06;letter-spacing:-.015em;
+}
+.hero h1 em{font-style:italic;color:var(--verde);font-weight:380}
+.hero-deck{color:var(--tinta-suave);max-width:46ch;margin-top:20px;font-size:clamp(1rem,1.4vw,1.1rem)}
+.hero-precio{margin-top:28px;display:flex;flex-wrap:wrap;align-items:baseline;gap:14px}
+.hero-precio strong{
+  font-family:var(--f-display);font-weight:480;font-size:clamp(2.1rem,3.6vw,3rem);
+  letter-spacing:-.01em;
+}
+.hero-precio span{
+  font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--tinta-suave);
+}
+.hero-ctas{display:flex;flex-wrap:wrap;gap:14px;margin-top:26px}
+.hero-foto{position:relative;overflow:hidden}
+.hero-foto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 62%}
+.hero-rail{
+  position:absolute;left:0;top:0;bottom:0;width:44px;
+  display:flex;align-items:center;justify-content:center;
+  background:linear-gradient(90deg, rgba(35,41,32,.42), rgba(35,41,32,0));
+}
+.hero-rail span{
+  writing-mode:vertical-rl;transform:rotate(180deg);
+  font-size:10.5px;font-weight:600;letter-spacing:.3em;text-transform:uppercase;
+  color:rgba(250,247,240,.92);white-space:nowrap;
+}
+@media (max-width:900px){
+  .hero{grid-template-columns:1fr;min-height:0}
+  .hero-texto{padding:40px 20px 32px}
+  .hero-foto{aspect-ratio:4/5}
+  .hero-foto img{position:static;height:100%}
+  .hero-rail{width:38px}
+}
+
+/* ============ Stats ============ */
+.stats{background:var(--arena);border-block:1px solid var(--linea)}
+.stats-grid{display:grid;grid-template-columns:repeat(6,1fr)}
+.stat{
+  padding:clamp(28px,3.5vw,44px) 12px;text-align:center;
+  border-left:1px solid var(--linea);
+}
+.stat:first-child{border-left:none}
+.stat b{
+  display:block;font-family:var(--f-display);font-weight:430;
+  font-size:clamp(2.1rem,4.2vw,3.4rem);line-height:1;letter-spacing:-.01em;
+}
+.stat b sup{font-size:.45em;font-weight:450}
+.stat span{
+  display:block;margin-top:10px;font-size:10.5px;font-weight:600;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--tinta-suave);
+}
+@media (max-width:820px){
+  .stats-grid{grid-template-columns:repeat(3,1fr)}
+  .stat:nth-child(4){border-left:none}
+  .stat:nth-child(-n+3){border-bottom:1px solid var(--linea)}
+}
+
+/* ============ Narrativa ============ */
+.narrativa-lead{
+  font-family:var(--f-display);font-weight:400;
+  font-size:clamp(1.25rem,2.2vw,1.6rem);line-height:1.5;
+  color:var(--tinta);max-width:34em;margin-top:24px;
+}
+.narrativa-lead::first-letter{
+  font-size:3.1em;font-weight:450;float:left;
+  line-height:.82;padding:6px 12px 0 0;color:var(--verde);
+}
+.razones{list-style:none;margin-top:clamp(40px,6vw,64px)}
+.razon{
+  display:grid;grid-template-columns:72px 1fr;gap:8px 24px;
+  padding-block:26px;border-top:1px solid var(--linea);
+}
+.razon:last-child{border-bottom:1px solid var(--linea)}
+.razon-num{
+  font-family:var(--f-display);font-style:italic;font-weight:420;
+  font-size:1.5rem;color:var(--terracota);line-height:1.3;
+}
+.razon h3{
+  font-family:var(--f-display);font-weight:500;font-size:1.3rem;
+  letter-spacing:-.005em;line-height:1.3;
+}
+.razon p{color:var(--tinta-suave);margin-top:6px;max-width:60ch;font-size:15.5px}
+@media (max-width:640px){
+  .razon{grid-template-columns:48px 1fr}
+  .razon-num{font-size:1.25rem}
+}
+
+/* ============ Distribución ============ */
+.distribucion{background:var(--papel);border-block:1px solid var(--linea)}
+.distribucion-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(36px,6vw,88px)}
+.espacios{list-style:none;columns:2;column-gap:clamp(24px,4vw,56px);margin-top:8px}
+.espacios li{
+  break-inside:avoid;padding:13px 0;border-bottom:1px solid var(--linea);
+  font-size:15px;font-weight:500;
+}
+.espacios li::before{content:"— ";color:var(--terracota)}
+@media (max-width:900px){
+  .distribucion-grid{grid-template-columns:1fr}
+  .espacios{columns:2}
+}
+@media (max-width:560px){ .espacios{columns:1} }
+
+/* ============ Banda vista ============ */
+.banda{position:relative;height:min(68vh,600px);overflow:hidden}
+.banda img{width:100%;height:100%;object-fit:cover;object-position:center 58%}
+.banda figcaption{
+  position:absolute;inset-inline:0;bottom:0;
+  padding:130px clamp(20px,4.5vw,48px) 36px;
+  background:linear-gradient(180deg, rgba(21,43,31,0), rgba(21,43,31,.74));
+}
+.banda figcaption p{
+  font-family:var(--f-display);font-style:italic;font-weight:400;
+  font-size:clamp(1.25rem,2.6vw,1.8rem);color:var(--cal);
+  max-width:24em;margin-inline:auto;text-align:center;line-height:1.35;
+}
+
+/* ============ Galería ============ */
+.galeria-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px}
+.galeria-nota{font-size:13px;color:var(--tinta-suave);letter-spacing:.04em}
+.galeria-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);
+  gap:clamp(14px,2vw,22px);margin-top:clamp(32px,4vw,48px);
+}
+.tile{cursor:zoom-in;background:none;border:none;padding:0;text-align:left;font:inherit}
+.tile figure{margin:0}
+.tile .marco{aspect-ratio:4/5;overflow:hidden;border-radius:4px;background:var(--arena)}
+.tile img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+.tile:hover img{transform:scale(1.03)}
+.tile figcaption{
+  margin-top:10px;font-size:10.5px;font-weight:600;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--tinta-suave);
+}
+.tile figcaption i{font-style:normal;color:var(--terracota);margin-right:8px}
+@media (max-width:720px){ .galeria-grid{grid-template-columns:repeat(2,1fr)} }
+
+/* ============ Lightbox ============ */
+.lb{
+  position:fixed;inset:0;z-index:100;
+  background:rgba(21,27,20,.94);
+  display:flex;align-items:center;justify-content:center;
+}
+.lb[hidden]{display:none}
+.lb figure{
+  max-width:min(92vw,820px);max-height:88vh;margin:0;
+  display:flex;flex-direction:column;gap:14px;
+}
+.lb img{max-width:100%;max-height:76vh;object-fit:contain;border-radius:4px;margin-inline:auto}
+.lb figcaption{display:flex;align-items:baseline;gap:16px;justify-content:center;color:var(--cal)}
+.lb-contador{font-family:var(--f-display);font-style:italic;font-size:1.05rem;opacity:.85}
+.lb-caption{font-size:11px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;opacity:.75}
+.lb button{
+  position:absolute;background:none;border:none;cursor:pointer;color:var(--cal);
+  font-family:var(--f-display);line-height:1;padding:14px;opacity:.8;
+  transition:opacity .2s ease;
+}
+.lb button:hover{opacity:1}
+.lb-cerrar{top:14px;right:18px;font-size:2.2rem}
+.lb-ant,.lb-sig{top:50%;transform:translateY(-50%);font-size:2.6rem}
+.lb-ant{left:10px}
+.lb-sig{right:10px}
+@media (max-width:640px){
+  .lb-ant{left:2px}.lb-sig{right:2px}
+  .lb-ant,.lb-sig{font-size:2.2rem}
+}
+body.lb-abierta{overflow:hidden}
+body.lb-abierta .wa-flotante{display:none}
+
+/* ============ Recorrido 3D ============ */
+.recorrido{background:var(--arena);border-block:1px solid var(--linea)}
+.tour-marco{
+  margin-top:clamp(32px,4vw,48px);
+  aspect-ratio:16/9;width:100%;
+  border-radius:8px;overflow:hidden;border:1px solid var(--linea);
+  background:var(--tinta);
+}
+.tour-marco iframe{width:100%;height:100%;border:0;display:block}
+@media (max-width:640px){ .tour-marco{aspect-ratio:4/3} }
+
+/* ============ Ubicación ============ */
+.ubicacion-grid{
+  display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);
+  gap:clamp(36px,5vw,72px);margin-top:clamp(32px,4vw,48px);align-items:start;
+}
+.mapa-marco{
+  aspect-ratio:4/3;border-radius:8px;overflow:hidden;
+  border:1px solid var(--linea);background:var(--arena);
+}
+.mapa-marco iframe{width:100%;height:100%;border:0;display:block}
+.cercanias-nota{font-size:13px;color:var(--tinta-suave);letter-spacing:.04em;margin-bottom:8px}
+.cercanias{list-style:none}
+.cercanias li{padding:16px 0;border-bottom:1px solid var(--linea)}
+.cercanias b{
+  display:flex;justify-content:space-between;align-items:baseline;gap:12px;
+  font-family:var(--f-display);font-weight:500;font-size:1.15rem;
+}
+.cercanias .min{
+  font-family:var(--f-display);font-style:italic;font-weight:420;
+  font-size:1.02rem;color:var(--terracota);white-space:nowrap;
+}
+.cercanias span{font-size:14.5px;color:var(--tinta-suave)}
+.ubicacion-nota{margin-top:22px;font-size:13.5px;color:var(--tinta-suave);font-style:italic}
+.mapa-link{
+  display:inline-block;margin-top:10px;font-size:13px;font-weight:600;
+  letter-spacing:.04em;color:var(--verde);
+}
+@media (max-width:900px){ .ubicacion-grid{grid-template-columns:1fr} }
+
+/* ============ Contacto ============ */
+.contacto{background:var(--verde);color:var(--cal)}
+.contacto .kicker{color:var(--arena)}
+.contacto .titulo{color:var(--cal);max-width:16ch}
+.contacto-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(36px,5vw,72px);align-items:center}
+.contacto p{color:rgba(250,247,240,.78);max-width:44ch;margin-top:20px}
+.contacto-precio{margin-top:30px;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.contacto-precio strong{font-family:var(--f-display);font-weight:460;font-size:clamp(1.9rem,3vw,2.5rem)}
+.contacto-precio span{font-size:11px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:rgba(250,247,240,.7)}
+.contacto-botones{display:flex;flex-direction:column;gap:14px}
+.contacto-botones .btn{justify-content:center;padding:17px 28px}
+.contacto-atiende{
+  text-align:center;font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+  color:rgba(250,247,240,.65);margin-top:6px;
+}
+@media (max-width:900px){ .contacto-grid{grid-template-columns:1fr} }
+
+/* ============ Footer ============ */
+.footer{border-top:1px solid var(--linea);padding-block:30px}
+.footer-inner{
+  display:flex;flex-wrap:wrap;gap:8px 24px;align-items:center;justify-content:space-between;
+  font-size:12px;letter-spacing:.06em;color:var(--tinta-suave);
+}
+
+/* ============ WhatsApp flotante ============ */
+.wa-flotante{
+  position:fixed;right:20px;bottom:20px;z-index:60;
+  width:56px;height:56px;border-radius:50%;
+  background:var(--wa);display:flex;align-items:center;justify-content:center;
+  box-shadow:0 6px 22px rgba(21,43,31,.35);
+  transition:transform .2s ease;
+}
+.wa-flotante:hover{transform:scale(1.07)}
+.wa-flotante svg{width:30px;height:30px;fill:#fff}
+
+/* ============ Reveals ============ */
+.rev{opacity:0;transform:translateY(14px);transition:opacity .6s cubic-bezier(.2,.6,.2,1), transform .6s cubic-bezier(.2,.6,.2,1)}
+.rev.vis{opacity:1;transform:none}
+@media (prefers-reduced-motion: reduce){
+  .rev{opacity:1;transform:none;transition:none}
+  .tile img{transition:none}
+  .btn,.wa-flotante{transition:none}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ Nav ============ -->
+<header class="nav">
+  <div class="contenedor nav-inner">
+    <a class="marca" href="#inicio">El Peñón <em>· 135 m²</em></a>
+    <nav aria-label="Secciones">
+      <ul class="nav-links">
+        <li><a href="#galeria">Galería</a></li>
+        <li><a href="#recorrido">Recorrido 3D</a></li>
+        <li><a href="#ubicacion">Ubicación</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <a class="nav-wa" href="https://wa.me/573107638296?text=Hola%20Sally%2C%20vi%20la%20p%C3%A1gina%20del%20apartamento%20en%20El%20Pe%C3%B1%C3%B3n%20y%20me%20gustar%C3%ADa%20agendar%20una%20visita." target="_blank" rel="noopener">WhatsApp</a>
+  </div>
+</header>
+
+<main>
+<!-- ============ Hero ============ -->
+<section class="hero" id="inicio">
+  <div class="hero-texto">
+    <p class="hero-eyebrow">El Peñón · Oeste de Cali · Renta directa</p>
+    <h1>Vivir en El Peñón.<br><em>Espacios que ya casi no se construyen.</em></h1>
+    <p class="hero-deck">135 m² remodelados: dos habitaciones con balcón y vista, sala y comedor independientes, terraza propia y garaje — a pasos del Parque El Peñón.</p>
+    <div class="hero-precio">
+      <strong>$2.700.000</strong>
+      <span>COP / mes · sin intermediarios</span>
+    </div>
+    <div class="hero-ctas">
+      <a class="btn btn-primario" href="https://wa.me/573107638296?text=Hola%20Sally%2C%20vi%20la%20p%C3%A1gina%20del%20apartamento%20en%20El%20Pe%C3%B1%C3%B3n%20y%20me%20gustar%C3%ADa%20agendar%20una%20visita." target="_blank" rel="noopener">Escríbenos por WhatsApp</a>
+      <a class="btn btn-secundario" href="#recorrido">Ver recorrido 3D</a>
+    </div>
+  </div>
+  <figure class="hero-foto">
+    <img src="assets/img/hero.jpg" alt="Sala del apartamento con ventanales esquineros y salida a la terraza" fetchpriority="high">
+    <div class="hero-rail" aria-hidden="true"><span>Piso 5 · Terraza propia · El Peñón, Cali</span></div>
+  </figure>
+</section>
+
+<!-- ============ Stats ============ -->
+<section class="stats" aria-label="Datos principales">
+  <div class="stats-grid">
+    <div class="stat rev"><b>135<sup>m²</sup></b><span>de área</span></div>
+    <div class="stat rev"><b>5<sup>to</sup></b><span>piso</span></div>
+    <div class="stat rev"><b>2</b><span>habitaciones</span></div>
+    <div class="stat rev"><b>2</b><span>baños</span></div>
+    <div class="stat rev"><b>1</b><span>garaje indep.</span></div>
+    <div class="stat rev"><b>5</b><span>estrato</span></div>
+  </div>
+</section>
+
+<!-- ============ Narrativa ============ -->
+<section class="seccion">
+  <div class="contenedor">
+    <p class="kicker rev">La propuesta</p>
+    <h2 class="titulo rev">No estás alquilando solo un apartamento.</h2>
+    <p class="narrativa-lead rev">Estás eligiendo vivir en uno de los sectores más caminables, exclusivos y tradicionales del oeste de Cali, donde el confort de un hogar amplio se combina con el privilegio de tener la mejor gastronomía, cultura y naturaleza a pocos pasos.</p>
+    <ol class="razones">
+      <li class="razon rev">
+        <span class="razon-num" aria-hidden="true">01</span>
+        <div><h3>El Peñón sin depender del carro</h3><p>Restaurantes, galerías, el parque y el río quedan caminando. El garaje independiente es para cuando lo necesites, no para todos los días.</p></div>
+      </li>
+      <li class="razon rev">
+        <span class="razon-num" aria-hidden="true">02</span>
+        <div><h3>Espacios que ya casi no se construyen</h3><p>135 m² reales: sala y comedor independientes, cocina amplia con barra, estar de TV y patio de ropas. Amplitud de otra época, recién remodelada.</p></div>
+      </li>
+      <li class="razon rev">
+        <span class="razon-num" aria-hidden="true">03</span>
+        <div><h3>Hecho para recibir</h3><p>Ideal para ejecutivos, diplomáticos o personas que disfrutan las visitas: zonas sociales generosas que rematan en una terraza propia.</p></div>
+      </li>
+      <li class="razon rev">
+        <span class="razon-num" aria-hidden="true">04</span>
+        <div><h3>Un apartamento con carácter</h3><p>En un edificio tradicional del barrio — no uno más dentro de un proyecto masivo.</p></div>
+      </li>
+      <li class="razon rev">
+        <span class="razon-num" aria-hidden="true">05</span>
+        <div><h3>Una ubicación que difícilmente pierde valor</h3><p>La alta demanda de El Peñón respalda cada peso que inviertes en vivir aquí.</p></div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ Distribución ============ -->
+<section class="distribucion seccion" id="distribucion">
+  <div class="contenedor distribucion-grid">
+    <div>
+      <p class="kicker rev">El apartamento</p>
+      <h2 class="titulo rev">La distribución</h2>
+      <p class="parrafo rev">Remodelado, con pisos de porcelanato y las dos habitaciones abiertas a balcón con vista. Cada espacio es independiente: aquí la sala no hace de comedor ni el comedor de estudio.</p>
+    </div>
+    <ul class="espacios rev">
+      <li>Sala independiente</li>
+      <li>Comedor independiente</li>
+      <li>Cocina amplia con barra</li>
+      <li>2 habitaciones con balcón y vista</li>
+      <li>Walk-in closet</li>
+      <li>2 baños</li>
+      <li>Estudio / estar de TV</li>
+      <li>Terraza propia</li>
+      <li>Patio de ropas</li>
+      <li>Garaje independiente</li>
+      <li>Pisos de porcelanato</li>
+      <li>Edificio tradicional</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ Banda vista ============ -->
+<figure class="banda">
+  <img src="assets/img/full/11-vista.jpg" alt="Vista desde el balcón hacia los edificios y el verde de El Peñón" loading="lazy">
+  <figcaption><p>Las dos habitaciones abren a balcón, con el verde del oeste al frente.</p></figcaption>
+</figure>
+
+<!-- ============ Galería ============ -->
+<section class="seccion" id="galeria">
+  <div class="contenedor">
+    <div class="galeria-head">
+      <div>
+        <p class="kicker rev">La galería</p>
+        <h2 class="titulo rev">Recorre cada espacio</h2>
+      </div>
+      <p class="galeria-nota rev" id="galeria-nota">Toca cualquier foto para ampliarla</p>
+    </div>
+    <div class="galeria-grid" id="galeria-grid"><!-- generado por JS --></div>
+    <div class="cta-seccion rev">
+      <p>Las fotos muestran mucho. Una visita lo muestra todo.</p>
+      <a class="btn btn-primario" href="https://wa.me/573107638296?text=Hola%20Sally%2C%20vi%20las%20fotos%20del%20apartamento%20en%20El%20Pe%C3%B1%C3%B3n%20y%20me%20gustar%C3%ADa%20agendar%20una%20visita." target="_blank" rel="noopener">Agendar visita por WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Recorrido 3D ============ -->
+<section class="recorrido seccion" id="recorrido">
+  <div class="contenedor">
+    <p class="kicker rev">El tour</p>
+    <h2 class="titulo rev">Camina el apartamento en 3D</h2>
+    <p class="parrafo rev">Recórrelo a tu ritmo desde el celular o el computador, como si ya estuvieras adentro. Cuando quieras verlo en persona, la visita se coordina por WhatsApp.</p>
+    <div class="tour-marco rev">
+      <iframe src="https://my.matterport.com/show/?m=shXHjdKmNcb" loading="lazy" allow="fullscreen; web-share; xr-spatial-tracking" allowfullscreen title="Recorrido virtual 3D del apartamento"></iframe>
+    </div>
+    <div class="cta-seccion rev">
+      <p>Ya lo caminaste en 3D. Ahora conócelo en persona.</p>
+      <a class="btn btn-primario" href="https://wa.me/573107638296?text=Hola%20Sally%2C%20hice%20el%20recorrido%203D%20del%20apartamento%20en%20El%20Pe%C3%B1%C3%B3n%20y%20quiero%20verlo%20en%20persona." target="_blank" rel="noopener">Coordinar visita por WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Ubicación ============ -->
+<section class="seccion" id="ubicacion">
+  <div class="contenedor">
+    <p class="kicker rev">El barrio</p>
+    <h2 class="titulo rev">A pasos del Parque El Peñón</h2>
+    <div class="ubicacion-grid">
+      <div class="rev">
+        <div class="mapa-marco">
+          <iframe src="https://www.google.com/maps/embed?origin=mfe&pb=!1m3!2m1!1sParque+El+Pe%C3%B1%C3%B3n,+Cali,+Colombia!6i16!3m1!1ses!5m1!1ses" loading="lazy" title="Mapa de la zona: Parque El Peñón, Cali"></iframe>
+        </div>
+        <p class="ubicacion-nota">Por discreción, la dirección exacta se comparte al coordinar la visita. El mapa muestra la zona.</p>
+        <a class="mapa-link" href="https://www.google.com/maps?q=Parque+El+Pe%C3%B1%C3%B3n,+Cali,+Colombia" target="_blank" rel="noopener">Abrir la zona en Google Maps →</a>
+      </div>
+      <div>
+        <p class="cercanias-nota rev">A pie desde la puerta · minutos aproximados</p>
+        <ul class="cercanias">
+          <li class="rev"><b>Parque El Peñón <i class="min">~2 min</i></b><span>El corazón del barrio: arte, cafés y vida de domingo.</span></li>
+          <li class="rev"><b>Zona gastronómica del oeste <i class="min">~3 min</i></b><span>La mejor mesa de Cali queda en el vecindario.</span></li>
+          <li class="rev"><b>El Río Cali <i class="min">~5 min</i></b><span>El verde y el rumor del agua, a unas cuadras.</span></li>
+          <li class="rev"><b>Museo La Tertulia <i class="min">~10 min</i></b><span>Cine, arte y cultura junto al río.</span></li>
+          <!-- [CONFIRMAR CON DUEÑO antes de publicar: supermercado más cercano y minutos]
+          <li class="rev"><b>Supermercado <i class="min">~X min</i></b><span>Mercado completo sin sacar el carro.</span></li> -->
+          <li class="rev"><b>Barrio San Antonio <i class="min">~15 min</i></b><span>Techos de teja, galerías y atardeceres.</span></li>
+          <li class="rev"><b>Ubicación central</b><span>Conectado con el centro y toda la ciudad.</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Contacto ============ -->
+<section class="contacto seccion" id="contacto">
+  <div class="contenedor contacto-grid">
+    <div>
+      <p class="kicker rev">Renta directa</p>
+      <h2 class="titulo rev">Agenda tu visita</h2>
+      <p class="rev">Trato directo, sin intermediarios ni comisiones de agencia. Escríbele a Sally Taylor por WhatsApp para coordinar una visita o resolver cualquier duda.</p>
+      <div class="contacto-precio rev">
+        <strong>$2.700.000</strong>
+        <span>COP / mes</span>
+      </div>
+    </div>
+    <div class="contacto-botones rev">
+      <a class="btn btn-claro" href="https://wa.me/573107638296?text=Hola%20Sally%2C%20vi%20la%20p%C3%A1gina%20del%20apartamento%20en%20El%20Pe%C3%B1%C3%B3n%20y%20me%20gustar%C3%ADa%20agendar%20una%20visita." target="_blank" rel="noopener">WhatsApp · 310 763 8296</a>
+      <p class="contacto-atiende">Atiende Sally Taylor</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ Footer ============ -->
+<footer class="footer">
+  <div class="contenedor footer-inner">
+    <span>Apartamento en renta · El Peñón, Cali</span>
+    <span>$2.700.000 COP/mes · Renta directa, sin intermediarios</span>
+    <span id="anio"></span>
+  </div>
+</footer>
+
+<!-- ============ WhatsApp flotante ============ -->
+<a class="wa-flotante" href="https://wa.me/573107638296?text=Hola%20Sally%2C%20estoy%20viendo%20la%20p%C3%A1gina%20del%20apartamento%20en%20El%20Pe%C3%B1%C3%B3n%20y%20tengo%20una%20pregunta." target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+  <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16.04 3C9.44 3 4.09 8.35 4.09 14.95c0 2.1.55 4.16 1.6 5.97L4 29l8.24-1.64a11.9 11.9 0 0 0 3.8.62h.01c6.6 0 11.95-5.35 11.95-11.95S22.64 3 16.04 3zm0 21.82h-.01c-1.18 0-2.35-.19-3.46-.57l-.83-.28-4.89.97 1-4.77-.3-.86a9.8 9.8 0 0 1-1.5-5.36c0-5.42 4.41-9.83 9.84-9.83 5.42 0 9.83 4.41 9.83 9.83s-4.41 9.87-9.68 9.87zm5.39-7.36c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.66.15-.2.29-.76.95-.93 1.15-.17.2-.34.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.64-2.04-.17-.3-.02-.46.13-.6.13-.13.3-.35.44-.52.15-.17.2-.3.3-.49.1-.2.05-.37-.02-.52-.08-.15-.67-1.6-.91-2.19-.24-.58-.49-.5-.66-.51h-.57c-.2 0-.52.07-.79.37-.27.29-1.04 1.01-1.04 2.47s1.06 2.87 1.21 3.07c.15.2 2.09 3.19 5.07 4.47.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.11.57-.08 1.75-.71 2-1.4.24-.69.24-1.28.17-1.4-.07-.13-.27-.2-.57-.35z"/></svg>
+</a>
+
+<!-- ============ Lightbox ============ -->
+<div class="lb" id="lightbox" role="dialog" aria-modal="true" aria-label="Foto ampliada" hidden>
+  <button class="lb-cerrar" type="button" aria-label="Cerrar">×</button>
+  <button class="lb-ant" type="button" aria-label="Foto anterior">‹</button>
+  <figure>
+    <img id="lb-img" src="" alt="">
+    <figcaption>
+      <span class="lb-contador" id="lb-contador"></span>
+      <span class="lb-caption" id="lb-caption"></span>
+    </figcaption>
+  </figure>
+  <button class="lb-sig" type="button" aria-label="Foto siguiente">›</button>
+</div>
+
+<script>
+(function(){
+  'use strict';
+
+  /* ---------- Datos de la galería ---------- */
+  var FOTOS = [
+    {n:'01', slug:'02-sala-comedor',          c:'Sala y comedor',             alt:'Vista general de la sala y el comedor independientes'},
+    {n:'02', slug:'03-comedor',               c:'Comedor a la terraza',       alt:'Comedor con lámparas colgantes y puerta corrediza hacia la terraza'},
+    {n:'03', slug:'05-cocina',                c:'Cocina con barra',           alt:'Cocina integral con barra desayunadora y muebles de madera'},
+    {n:'04', slug:'06-terraza',               c:'Terraza propia',             alt:'Terraza amplia con vista a los árboles del barrio'},
+    {n:'05', slug:'08-habitacion-principal',  c:'Habitación principal',       alt:'Habitación principal con walk-in closet y salida al balcón'},
+    {n:'06', slug:'09-habitacion-2',          c:'Habitación 2',               alt:'Segunda habitación con puerta corrediza hacia su balcón'},
+    {n:'07', slug:'10-balcon',                c:'Balcón con vista',           alt:'Balcón de la habitación con vista a los edificios del oeste'},
+    {n:'08', slug:'13-recibidor',             c:'Recibidor',                  alt:'Recibidor con puerta principal de madera'}
+  ];
+  var FULL = function(f){ return 'assets/img/full/' + f.slug + '.jpg'; };
+  var THUMB = function(f){ return 'assets/img/thumb/' + f.slug + '.jpg'; };
+
+  /* ---------- Grilla ---------- */
+  document.getElementById('galeria-nota').textContent = FOTOS.length + ' fotos · toca cualquiera para ampliarla';
+  var grid = document.getElementById('galeria-grid');
+  FOTOS.forEach(function(f, i){
+    var btn = document.createElement('button');
+    btn.className = 'tile rev';
+    btn.type = 'button';
+    btn.setAttribute('aria-label', 'Ampliar foto: ' + f.c);
+    btn.innerHTML =
+      '<figure>' +
+        '<div class="marco"><img src="' + THUMB(f) + '" alt="' + f.alt + '" loading="lazy"></div>' +
+        '<figcaption><i>' + f.n + '</i>' + f.c + '</figcaption>' +
+      '</figure>';
+    btn.addEventListener('click', function(){ abrir(i); });
+    grid.appendChild(btn);
+  });
+
+  /* ---------- Lightbox ---------- */
+  var lb = document.getElementById('lightbox');
+  var lbImg = document.getElementById('lb-img');
+  var lbContador = document.getElementById('lb-contador');
+  var lbCaption = document.getElementById('lb-caption');
+  var btnCerrar = lb.querySelector('.lb-cerrar');
+  var btnAnt = lb.querySelector('.lb-ant');
+  var btnSig = lb.querySelector('.lb-sig');
+  var actual = 0;
+  var origen = null;
+
+  function precargar(i){
+    var idx = (i + FOTOS.length) % FOTOS.length;
+    var im = new Image();
+    im.src = FULL(FOTOS[idx]);
+  }
+  function mostrar(i){
+    actual = (i + FOTOS.length) % FOTOS.length;
+    var f = FOTOS[actual];
+    lbImg.src = FULL(f);
+    lbImg.alt = f.alt;
+    lbContador.textContent = (actual + 1) + ' / ' + FOTOS.length;
+    lbCaption.textContent = f.c;
+    precargar(actual + 1);
+    precargar(actual - 1);
+  }
+  function abrir(i){
+    origen = document.activeElement;
+    mostrar(i);
+    lb.hidden = false;
+    document.body.classList.add('lb-abierta');
+    btnCerrar.focus();
+  }
+  function cerrar(){
+    lb.hidden = true;
+    document.body.classList.remove('lb-abierta');
+    if (origen && origen.focus) origen.focus();
+  }
+
+  btnCerrar.addEventListener('click', cerrar);
+  btnAnt.addEventListener('click', function(){ mostrar(actual - 1); });
+  btnSig.addEventListener('click', function(){ mostrar(actual + 1); });
+  lb.addEventListener('click', function(e){ if (e.target === lb) cerrar(); });
+
+  document.addEventListener('keydown', function(e){
+    if (lb.hidden) return;
+    if (e.key === 'Escape') cerrar();
+    else if (e.key === 'ArrowLeft') mostrar(actual - 1);
+    else if (e.key === 'ArrowRight') mostrar(actual + 1);
+  });
+
+  var toqueX = null;
+  lb.addEventListener('touchstart', function(e){ toqueX = e.changedTouches[0].clientX; }, {passive:true});
+  lb.addEventListener('touchend', function(e){
+    if (toqueX === null) return;
+    var dx = e.changedTouches[0].clientX - toqueX;
+    toqueX = null;
+    if (Math.abs(dx) > 40) mostrar(actual + (dx < 0 ? 1 : -1));
+  }, {passive:true});
+
+  /* ---------- Reveals ---------- */
+  var reducido = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var revs = document.querySelectorAll('.rev');
+  if (reducido || !('IntersectionObserver' in window)) {
+    revs.forEach(function(el){ el.classList.add('vis'); });
+  } else {
+    var obs = new IntersectionObserver(function(entradas){
+      entradas.forEach(function(ent){
+        if (ent.isIntersecting) {
+          obs.unobserve(ent.target);
+          ent.target.classList.add('vis');
+        }
+      });
+    }, {threshold: .15});
+    revs.forEach(function(el, i){ obs.observe(el); });
+    /* stagger entre hermanos consecutivos */
+    document.querySelectorAll('.stats-grid, .galeria-grid, .cercanias').forEach(function(grupo){
+      Array.prototype.forEach.call(grupo.children, function(hijo, i){
+        hijo.style.transitionDelay = Math.min(i * 70, 420) + 'ms';
+      });
+    });
+  }
+
+  /* ---------- Año ---------- */
+  document.getElementById('anio').textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
