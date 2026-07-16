@@ -7,3 +7,5 @@
 
 # Archivos del sistema
 .DS_Store
+
+.playwright-mcp/

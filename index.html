@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Apartamento en renta en El Peñón, Cali · 135 m² · $2.700.000</title>
-<meta name="description" content="Apartamento remodelado de 135 m² en El Peñón, Cali: 2 habitaciones con balcón y vista, 2 baños, terraza, garaje, piso 5. $2.700.000/mes, renta directa sin intermediarios.">
+<meta name="description" content="Apartamento remodelado de 135 m² en El Peñón, Cali: 2 habitaciones con balcón y vista, 2 baños, estudio, terraza, garaje, piso 5. $2.700.000/mes, renta directa.">
 <meta name="theme-color" content="#FAF7F0">
 
 <!-- ========== TODO AL PUBLICAR (checklist) ==========
@@ -13,14 +13,14 @@
      3. Enviarse el link a sí mismo por WhatsApp y confirmar que salen foto, título y descripción.
      Los previews de WhatsApp solo funcionan con la página hospedada, no abriendo el archivo local. -->
 <meta property="og:title" content="Apartamento en renta en El Peñón, Cali · 135 m² · $2.700.000">
-<meta property="og:description" content="Remodelado, 2 habitaciones con balcón y vista, terraza, garaje. Renta directa, sin intermediarios.">
+<meta property="og:description" content="Remodelado, 2 habitaciones con balcón y vista, estudio, terraza, garaje. Renta directa.">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="es_CO">
 <meta property="og:url" content="https://[DOMINIO-AL-PUBLICAR]/">
 <meta property="og:image" content="https://[DOMINIO-AL-PUBLICAR]/assets/img/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Sala del apartamento con ventanales esquineros y salida a la terraza">
+<meta property="og:image:alt" content="Sala del apartamento con sofá y salida a la terraza">
 <meta name="twitter:card" content="summary_large_image">
 
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231E3A2A'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='36' fill='%23FAF7F0' text-anchor='middle'%3EP%3C/text%3E%3C/svg%3E">
@@ -184,12 +184,13 @@ a{color:inherit}
 
 /* ============ Stats ============ */
 .stats{background:var(--arena);border-block:1px solid var(--linea)}
-.stats-grid{display:grid;grid-template-columns:repeat(6,1fr)}
+.stats-grid{display:grid;grid-template-columns:repeat(3,1fr)}
 .stat{
-  padding:clamp(28px,3.5vw,44px) 12px;text-align:center;
+  padding:clamp(24px,3vw,38px) 12px;text-align:center;
   border-left:1px solid var(--linea);
 }
-.stat:first-child{border-left:none}
+.stat:nth-child(3n+1){border-left:none}
+.stat:nth-child(-n+6){border-bottom:1px solid var(--linea)}
 .stat b{
   display:block;font-family:var(--f-display);font-weight:430;
   font-size:clamp(2.1rem,4.2vw,3.4rem);line-height:1;letter-spacing:-.01em;
@@ -198,11 +199,6 @@ a{color:inherit}
 .stat span{
   display:block;margin-top:10px;font-size:10.5px;font-weight:600;
   letter-spacing:.18em;text-transform:uppercase;color:var(--tinta-suave);
-}
-@media (max-width:820px){
-  .stats-grid{grid-template-columns:repeat(3,1fr)}
-  .stat:nth-child(4){border-left:none}
-  .stat:nth-child(-n+3){border-bottom:1px solid var(--linea)}
 }
 
 /* ============ Narrativa ============ */
@@ -249,20 +245,6 @@ a{color:inherit}
   .espacios{columns:2}
 }
 @media (max-width:560px){ .espacios{columns:1} }
-
-/* ============ Banda vista ============ */
-.banda{position:relative;height:min(68vh,600px);overflow:hidden}
-.banda img{width:100%;height:100%;object-fit:cover;object-position:center 58%}
-.banda figcaption{
-  position:absolute;inset-inline:0;bottom:0;
-  padding:130px clamp(20px,4.5vw,48px) 36px;
-  background:linear-gradient(180deg, rgba(21,43,31,0), rgba(21,43,31,.74));
-}
-.banda figcaption p{
-  font-family:var(--f-display);font-style:italic;font-weight:400;
-  font-size:clamp(1.25rem,2.6vw,1.8rem);color:var(--cal);
-  max-width:24em;margin-inline:auto;text-align:center;line-height:1.35;
-}
 
 /* ============ Galería ============ */
 .galeria-head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px}
@@ -427,7 +409,7 @@ body.lb-abierta .wa-flotante{display:none}
     <p class="hero-deck">135 m² remodelados: dos habitaciones con balcón y vista, sala y comedor independientes, terraza propia y garaje — a pasos del Parque El Peñón.</p>
     <div class="hero-precio">
       <strong>$2.700.000</strong>
-      <span>COP / mes · sin intermediarios</span>
+      <span>COP / mes</span>
     </div>
     <div class="hero-ctas">
       <a class="btn btn-primario" href="https://wa.me/573107638296?text=Hola%20Sally%2C%20vi%20la%20p%C3%A1gina%20del%20apartamento%20en%20El%20Pe%C3%B1%C3%B3n%20y%20me%20gustar%C3%ADa%20agendar%20una%20visita." target="_blank" rel="noopener">Escríbenos por WhatsApp</a>
@@ -449,6 +431,9 @@ body.lb-abierta .wa-flotante{display:none}
     <div class="stat rev"><b>2</b><span>baños</span></div>
     <div class="stat rev"><b>1</b><span>garaje indep.</span></div>
     <div class="stat rev"><b>5</b><span>estrato</span></div>
+    <div class="stat rev"><b>1</b><span>estudio</span></div>
+    <div class="stat rev"><b>1</b><span>terraza propia</span></div>
+    <div class="stat rev"><b>1</b><span>balcón con vista</span></div>
   </div>
 </section>
 
@@ -507,12 +492,6 @@ body.lb-abierta .wa-flotante{display:none}
     </ul>
   </div>
 </section>
-
-<!-- ============ Banda vista ============ -->
-<figure class="banda">
-  <img src="assets/img/full/11-vista.jpg" alt="Vista desde el balcón hacia los edificios y el verde de El Peñón" loading="lazy">
-  <figcaption><p>Las dos habitaciones abren a balcón, con el verde del oeste al frente.</p></figcaption>
-</figure>
 
 <!-- ============ Galería ============ -->
 <section class="seccion" id="galeria">
@@ -584,7 +563,7 @@ body.lb-abierta .wa-flotante{display:none}
     <div>
       <p class="kicker rev">Renta directa</p>
       <h2 class="titulo rev">Agenda tu visita</h2>
-      <p class="rev">Trato directo, sin intermediarios ni comisiones de agencia. Escríbele a Sally Taylor por WhatsApp para coordinar una visita o resolver cualquier duda.</p>
+      <p class="rev">Trato directo y sin comisiones de agencia. Escríbele a Sally Taylor por WhatsApp para coordinar una visita o resolver cualquier duda.</p>
       <div class="contacto-precio rev">
         <strong>$2.700.000</strong>
         <span>COP / mes</span>
@@ -602,7 +581,7 @@ body.lb-abierta .wa-flotante{display:none}
 <footer class="footer">
   <div class="contenedor footer-inner">
     <span>Apartamento en renta · El Peñón, Cali</span>
-    <span>$2.700.000 COP/mes · Renta directa, sin intermediarios</span>
+    <span>$2.700.000 COP/mes · Renta directa</span>
     <span id="anio"></span>
   </div>
 </footer>
@@ -632,14 +611,18 @@ body.lb-abierta .wa-flotante{display:none}
 
   /* ---------- Datos de la galería ---------- */
   var FOTOS = [
-    {n:'01', slug:'02-sala-comedor',          c:'Sala y comedor',             alt:'Vista general de la sala y el comedor independientes'},
-    {n:'02', slug:'03-comedor',               c:'Comedor a la terraza',       alt:'Comedor con lámparas colgantes y puerta corrediza hacia la terraza'},
+    {n:'01', slug:'14-sala',                  c:'La sala',                    alt:'Sala con sofá y mesa de centro, abierta a la terraza'},
+    {n:'02', slug:'15-comedor',               c:'Comedor a la terraza',       alt:'Comedor de madera junto a la puerta corrediza de la terraza'},
     {n:'03', slug:'05-cocina',                c:'Cocina con barra',           alt:'Cocina integral con barra desayunadora y muebles de madera'},
-    {n:'04', slug:'06-terraza',               c:'Terraza propia',             alt:'Terraza amplia con vista a los árboles del barrio'},
-    {n:'05', slug:'08-habitacion-principal',  c:'Habitación principal',       alt:'Habitación principal con walk-in closet y salida al balcón'},
-    {n:'06', slug:'09-habitacion-2',          c:'Habitación 2',               alt:'Segunda habitación con puerta corrediza hacia su balcón'},
-    {n:'07', slug:'10-balcon',                c:'Balcón con vista',           alt:'Balcón de la habitación con vista a los edificios del oeste'},
-    {n:'08', slug:'13-recibidor',             c:'Recibidor',                  alt:'Recibidor con puerta principal de madera'}
+    {n:'04', slug:'16-terraza-sol',           c:'Terraza propia',             alt:'Terraza soleada rodeada de los árboles del barrio'},
+    {n:'05', slug:'17-habitacion-ppal',       c:'Habitación principal',       alt:'Habitación principal con cama doble y techo de vigas'},
+    {n:'06', slug:'18-walkin',                c:'Walk-in closet',             alt:'Walk-in closet de madera de la habitación principal'},
+    {n:'07', slug:'19-bano',                  c:'Baño principal',             alt:'Baño con mesón en piedra y ducha de vidrio'},
+    {n:'08', slug:'09-habitacion-2',          c:'Habitación 2',               alt:'Segunda habitación con puerta corrediza hacia su balcón'},
+    {n:'09', slug:'20-balcon-sol',            c:'Balcón con vista',           alt:'Balcón con vista a los árboles y edificios del oeste'},
+    {n:'10', slug:'21-estudio',               c:'Estudio / estar de TV',      alt:'Estudio con escritorio y sofá, con salida al balcón'},
+    {n:'11', slug:'24-terraza-esquina',       c:'Terraza · otro ángulo',      alt:'Esquina de la terraza con remate de ladrillo bajo los árboles'},
+    {n:'12', slug:'13-recibidor',             c:'Recibidor',                  alt:'Recibidor con puerta principal de madera'}
   ];
   var FULL = function(f){ return 'assets/img/full/' + f.slug + '.jpg'; };
   var THUMB = function(f){ return 'assets/img/thumb/' + f.slug + '.jpg'; };
